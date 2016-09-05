@@ -34,16 +34,16 @@ public class NumbersActivity extends AppCompatActivity {
 
         ArrayList<Word> words= new ArrayList<Word>();
 
-        words.add(new Word("one","lucci"));
-        words.add(new Word("one","lucci"));
-        words.add(new Word("one","lucci"));
-        words.add(new Word("one","lucci"));
-        words.add(new Word("one","lucci"));
-        words.add(new Word("one","lucci"));
-        words.add(new Word("one","lucci"));
-        words.add(new Word("one","lucci"));
-        words.add(new Word("one","lucci"));
-        ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<Word>(this,R.layout.list_item, words);
+        words.add(new Word("one","一"));
+        words.add(new Word("two","二"));
+        words.add(new Word("three","三"));
+        words.add(new Word("four","四"));
+        words.add(new Word("one","五"));
+        words.add(new Word("one","六"));
+        words.add(new Word("one","七"));
+        words.add(new Word("one","八"));
+        words.add(new Word("one","九"));
+        WordAdapter itemsAdapter = new WordAdapter(this,R.layout.list_item,words);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

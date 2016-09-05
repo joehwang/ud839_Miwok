@@ -13,5 +13,10 @@ public class Word {
        mengword=engword;
        mmiwokword=mworkword;
    }
-
+    public String getMengword(){
+        return mengword;
+    }
+    public String getMmiwokword(){
+        return mmiwokword;
+    }
 }
